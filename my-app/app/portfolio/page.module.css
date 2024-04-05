@@ -3,7 +3,6 @@
   justify-content: center;
   flex-wrap: wrap;
 }
-
 .textContainer {
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.672);
   display: flex;
@@ -72,7 +71,6 @@
   }
 }
 
-
 @keyframes slideInFromLeft {
   0% {
     transform: translateX(-2%);
@@ -128,6 +126,7 @@
   max-height: 300px;
   transition-duration: 300ms;
   margin-top: 50px;
+
 }
 
 @media screen and (max-width: 650px) {

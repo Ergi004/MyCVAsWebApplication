@@ -1,12 +1,18 @@
 .textContainer {
-  max-width: 750px;
-  max-height: 450px;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.672);
+  max-width: 500px;
   flex-wrap: wrap;
   margin: 100px auto;
-  font-family: "Licorice", cursive;
   color: rgb(223, 222, 222);
   background-color: rgba(0, 0, 0, 0.426);
   animation: 1s ease-out 0s 1 slideInFromBottom;
+}
+
+@media screen and (max-width: 800px) {
+  .textContainer {
+    max-width: 200px;
+    margin: 20px auto;
+  }
 }
 
 .container {
@@ -14,16 +20,40 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+.sections {
+  width: 1200px;
+  display: flex;
+}
 
 .image {
-  height: 330px;
-  width: 380px;
+  max-height: 300px;
+  max-width: 350px;
   border-radius: 30px;
+  margin: 20px;
   animation: 1s ease-out 0s 1 slideInFromBottom;
+  transition-duration: 400ms;
+}
+
+@media screen and (max-width: 900px) {
+  .image {
+    max-width: 200px;
+    max-height: 200px;
+    transition-duration: 400ms;
+  }
 }
 
 .imageContainer {
   margin: 100px auto;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+}
+@media screen and (max-width: 900px) {
+  .imageContainer {
+    max-width: 240px;
+    max-height: 235px;
+    transition-duration: 400ms;
+  }
 }
 
 @keyframes slideInFromBottom {
@@ -35,19 +65,116 @@
   }
 }
 
-
 .heading {
-  margin: 0;
-  font-size: 40px;
+  margin: 5px;
+  font-size: 25px;
   padding: 30px;
   animation: 1.5s ease-out 0s 1 slideInFromLeft;
   color: rgba(0, 255, 89, 0.716);
+  transition-duration: 400ms;
 }
-
+@media screen and (max-width: 900px) {
+  .heading {
+    font-size: 15px;
+    padding: 15px;
+  }
+}
 
 .text {
-  font-size: 25px;
+  font-size: 18px;
+  margin: 5px;
   padding: 0 30px 0 30px;
   animation: 1.5s ease-out 0s 1 slideInFromLeft;
+  transition-duration: 400ms;
 }
 
+@media screen and (max-width: 900px) {
+  .text {
+    font-size: 15px;
+    padding: 0 15px 0 15px;
+  }
+}
+
+/* footer */
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(15, 15, 15);
+  max-height: 300px;
+  transition-duration: 300ms;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 650px) {
+  .footer {
+    max-height: 230px;
+    transition-duration: 300ms;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .footer {
+    max-height: 230px;
+    transition-duration: 300ms;
+  }
+}
+
+.iconContainer {
+  margin: 10px auto;
+  transition-duration: 400ms;
+}
+@media screen and (max-width: 1000px) {
+  .iconContainer {
+    margin: 5px auto;
+    transition-duration: 400ms;
+  }
+}
+
+.icon {
+  max-height: 100px;
+  transition-duration: 400ms;
+  margin-top: 20px;
+}
+@media screen and (max-width: 1000px) {
+  .icon {
+    max-height: 50px;
+    transition-duration: 400ms;
+  }
+}
+
+.linksContainer {
+  margin: 10px auto;
+  color: white;
+  transition-duration: 400ms;
+}
+
+.links {
+  text-decoration: none;
+  color: rgb(228, 228, 228);
+  padding: 20px;
+}
+
+.links:hover {
+  color: white;
+  font-weight: bold;
+}
+@media screen and (max-width: 1000px) {
+  .links {
+    padding: 10px;
+    transition-duration: 400ms;
+  }
+}
+
+.socialMediaIcons {
+  height: 50px;
+  padding: 0 25px 25px 25px;
+  transition-duration: 400ms;
+}
+
+@media screen and (max-width: 1000px) {
+  .socialMediaIcons {
+    padding: 0 20px 0 20px;
+    transition-duration: 400ms;
+  }
+}

@@ -5,13 +5,7 @@ body {
     rgba(0, 0, 0, 0.964)
   );
   margin: 0;
-  height: 900px;
-  display: flex;
-  flex-direction: column;
-}
-
-footer {
-  border: white solid 1px;
+  align-items: center;
 }
 
 @keyframes slideInFromLeft {
@@ -19,15 +13,7 @@ footer {
     transform: translateX(2%);
   }
   80% {
-    transform: translateX(0); 
-    
+    transform: translateX(0);
   }
 }
 
-#image {
-  animation: 1.3s ease-out 0s 1 slideInFromLeft;
-  margin: 0 auto;
-  width: 550px;
-  height: 550px;
-  z-index: -1000;
-}
