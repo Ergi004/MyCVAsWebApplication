@@ -17,9 +17,7 @@ const Career = () => {
               seasoned software engineer whose expertise knows no bounds. From
               the inception of his career, Ergi has been driven by an insatiable
               curiosity for technology and an unwavering commitment to
-              excellence. Throughout his career, Ergi has navigated through the
-              ever-evolving landscape of software engineering with grace and
-              determination.
+              excellence.
             </p>
           </div>
         </div>

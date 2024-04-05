@@ -33,14 +33,38 @@
   animation: 1s ease-out 0s 1 slideInFromBottom;
   transition-duration: 400ms;
 }
-
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1400px) {
   .image {
-    max-width: 200px;
-    max-height: 200px;
+    width: 200px;
+    height: 140px;
     transition-duration: 400ms;
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .image {
+    width: 170px;
+    height: 130px;
+    transition-duration: 400ms;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .image {
+    width: 140px;
+    height: 100px;
+    transition-duration: 400ms;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .image {
+    width: 110px;
+    height: 80px;
+    transition-duration: 400ms;
+  }
+}
+
 
 .imageContainer {
   margin: 100px auto;
@@ -48,10 +72,37 @@
   border-radius: 20px;
   padding: 20px;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1400px) {
   .imageContainer {
-    max-width: 240px;
-    max-height: 235px;
+    margin-top: 80px;
+    max-width: 400px;
+    max-height: 190px;
+    transition-duration: 400ms;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .imageContainer {
+    max-height: 170px;
+    max-width: 360px;
+    transition-duration: 400ms;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .imageContainer {
+    margin-top: 80px;
+    max-width: 280px;
+    max-height: 145px;
+    transition-duration: 400ms;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .imageContainer {
+    margin-top: 80px;
+    max-width: 200px;
+    max-height: 130px;
     transition-duration: 400ms;
   }
 }

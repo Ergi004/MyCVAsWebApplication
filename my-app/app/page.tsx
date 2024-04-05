@@ -7,7 +7,6 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <Presentation />
-      
       <footer className={styles.footer}>
         <div className={styles.iconContainer}>
           <img className={styles.icon} src="/footer-icon.svg" alt="" />

@@ -19,10 +19,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <style>
-          @import
-          url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap')
-        </style>
         <Navbar />
         {children}
       </body>
