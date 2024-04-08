@@ -1,3 +1,9 @@
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .textContainer {
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.672);
   max-width: 500px;
@@ -10,16 +16,11 @@
 
 @media screen and (max-width: 800px) {
   .textContainer {
-    max-width: 200px;
+    max-width: 150px;
     margin: 20px auto;
   }
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
 .sections {
   width: 1200px;
   display: flex;
@@ -32,21 +33,6 @@
   margin: 20px;
   animation: 1s ease-out 0s 1 slideInFromBottom;
   transition-duration: 400ms;
-}
-@media screen and (max-width: 1400px) {
-  .image {
-    width: 200px;
-    height: 140px;
-    transition-duration: 400ms;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .image {
-    width: 170px;
-    height: 130px;
-    transition-duration: 400ms;
-  }
 }
 
 @media screen and (max-width: 800px) {
@@ -65,35 +51,17 @@
   }
 }
 
-
 .imageContainer {
   margin: 100px auto;
   background-color: white;
   border-radius: 20px;
   padding: 20px;
 }
-@media screen and (max-width: 1400px) {
-  .imageContainer {
-    margin-top: 80px;
-    max-width: 400px;
-    max-height: 190px;
-    transition-duration: 400ms;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .imageContainer {
-    max-height: 170px;
-    max-width: 360px;
-    transition-duration: 400ms;
-  }
-}
 
 @media screen and (max-width: 800px) {
   .imageContainer {
     margin-top: 80px;
     max-width: 280px;
-    max-height: 145px;
     transition-duration: 400ms;
   }
 }
@@ -113,36 +81,6 @@
   }
   80% {
     transform: translateY(0);
-  }
-}
-
-.heading {
-  margin: 5px;
-  font-size: 25px;
-  padding: 30px;
-  animation: 1.5s ease-out 0s 1 slideInFromLeft;
-  color: rgba(0, 255, 89, 0.716);
-  transition-duration: 400ms;
-}
-@media screen and (max-width: 900px) {
-  .heading {
-    font-size: 15px;
-    padding: 15px;
-  }
-}
-
-.text {
-  font-size: 18px;
-  margin: 5px;
-  padding: 0 30px 0 30px;
-  animation: 1.5s ease-out 0s 1 slideInFromLeft;
-  transition-duration: 400ms;
-}
-
-@media screen and (max-width: 900px) {
-  .text {
-    font-size: 15px;
-    padding: 0 15px 0 15px;
   }
 }
 
