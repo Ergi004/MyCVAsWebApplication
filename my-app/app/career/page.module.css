@@ -14,13 +14,6 @@
   animation: 1s ease-out 0s 1 slideInFromBottom;
 }
 
-@media screen and (max-width: 800px) {
-  .textContainer {
-    max-width: 150px;
-    margin: 20px auto;
-  }
-}
-
 .sections {
   width: 1200px;
   display: flex;
@@ -35,10 +28,37 @@
   transition-duration: 400ms;
 }
 
-@media screen and (max-width: 800px) {
+.imageContainer {
+  margin: 100px auto;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(2%);
+  }
+  80% {
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .textContainer {
+    max-width: 150px;
+    margin: 20px auto;
+  }
+
   .image {
     width: 140px;
     height: 100px;
+    transition-duration: 400ms;
+  }
+
+  .imageContainer {
+    margin-top: 80px;
+    max-width: 280px;
     transition-duration: 400ms;
   }
 }
@@ -49,37 +69,10 @@
     height: 80px;
     transition-duration: 400ms;
   }
-}
-
-.imageContainer {
-  margin: 100px auto;
-  background-color: white;
-  border-radius: 20px;
-  padding: 20px;
-}
-
-@media screen and (max-width: 800px) {
-  .imageContainer {
-    margin-top: 80px;
-    max-width: 280px;
-    transition-duration: 400ms;
-  }
-}
-
-@media screen and (max-width: 600px) {
   .imageContainer {
     margin-top: 80px;
     max-width: 200px;
     max-height: 130px;
     transition-duration: 400ms;
-  }
-}
-
-@keyframes slideInFromBottom {
-  0% {
-    transform: translateY(2%);
-  }
-  80% {
-    transform: translateY(0);
   }
 }

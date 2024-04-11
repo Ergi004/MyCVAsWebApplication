@@ -3,7 +3,6 @@
 import { SetStateAction, useState } from "react";
 import styles from "./navbar.module.css";
 import Link from "next/link";
-import DropDown from "../DropDown/DropDown";
 
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState("/");

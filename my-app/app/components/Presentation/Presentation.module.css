@@ -32,12 +32,24 @@
     margin: 50px auto;
     transition-duration: 300ms;
   }
+
+  .image {
+    max-width: 200px;
+    max-height: 200px;
+    transition-duration: 400ms;
+  }
 }
 @media screen and (max-width: 600px) {
   .textContainer {
     max-width: 250px;
     margin: 70px auto;
     transition-duration: 300ms;
+  }
+
+  .image {
+    max-width: 120px;
+    max-height: 120px;
+    transition-duration: 400ms;
   }
 }
 
@@ -48,22 +60,6 @@
   height: 500px;
   transition-duration: 400ms;
   animation: 1s ease-out 0s 1 slideInFromBottom;
-}
-
-@media screen and (max-width: 800px) {
-  .image {
-    max-width: 200px;
-    max-height: 200px;
-    transition-duration: 400ms;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .image {
-    max-width: 120px;
-    max-height: 120px;
-    transition-duration: 400ms;
-  }
 }
 
 .imageContainer {
