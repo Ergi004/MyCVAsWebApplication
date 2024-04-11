@@ -3,7 +3,7 @@
 import React from "react";
 import styles from "./Presentation.module.css";
 import Card from "../Card/Card";
-import { passionsData, welcomeData } from "./data";
+import { passionsData, welcomeData } from "../Card/data";
 const Presentation = () => {
   return (
     <div className={styles.container}>

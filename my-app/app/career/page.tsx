@@ -2,7 +2,7 @@
 import React from "react";
 import styles from "./page.module.css";
 import Card from "../components/Card/Card";
-import { careerData, dreamsData } from "../components/Presentation/data";
+import { careerData, dreamsData } from "../components/Card/data";
 
 const Career = () => {
   return (
@@ -13,7 +13,7 @@ const Career = () => {
             <img className={styles.image} src="/career.png" alt="bg" />
           </div>
           <div className={styles.textContainer}>
-            <Card data={careerData}/>
+            <Card data={careerData} />
             {/* <h1 className={styles.heading}>My Career</h1>
             <p className={styles.text}>
               Embark on a journey through the illustrious career of Ergi, a
@@ -26,7 +26,7 @@ const Career = () => {
         </div>
         <div className={styles.sections}>
           <div className={styles.textContainer}>
-            <Card data={dreamsData}/>
+            <Card data={dreamsData} />
             {/* <h1 className={styles.heading}>My Dreams</h1>
             <p className={styles.text}>
               In the tapestry of my aspirations, the thread of success weaves

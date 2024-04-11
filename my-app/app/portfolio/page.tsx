@@ -6,14 +6,19 @@ import {
   airBnBCloneData,
   bankSysData,
   simpleShellData,
-} from "../components/Presentation/data";
+} from "../components/Card/data";
 import Card from "../components/Card/Card";
 
 const Portfolio = () => {
   return (
     <div className={styles.container}>
       <div className={styles.textContainer}>
-        <Card data={airBnBCloneData} />
+        <a
+          className={styles.anchor}
+          href="https://github.com/Ergi004/holbertonschool-AirBnB_clone_v4"
+        >
+          <Card data={airBnBCloneData} />
+        </a>
       </div>
       <div className={styles.imageContainer}>
         <img className={styles.image} src="/AirBnB.png" alt="aribnb" />
@@ -22,10 +27,18 @@ const Portfolio = () => {
         <img className={styles.image} src="/bankLogin.png" alt="bank" />
       </div>
       <div className={styles.textContainer}>
-        <Card data={bankSysData} />
+        <a className={styles.anchor} href="https://github.com/Ergi004/Bank">
+          <Card data={bankSysData} />
+        </a>
+        .
       </div>
       <div className={styles.textContainer}>
-        <Card data={simpleShellData} />
+        <a
+          className={styles.anchor}
+          href="https://github.com/romeollangozi/holbertonschool-simple_shell"
+        >
+          <Card data={simpleShellData} />
+        </a>
       </div>
       <div className={styles.imageContainer}>
         <img className={styles.image} src="/shell.png" alt="shell" />

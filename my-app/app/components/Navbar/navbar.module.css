@@ -2,51 +2,79 @@
   display: flex;
   justify-content: center;
   color: rgb(189, 188, 188);
-  padding: 10px;
   max-width: 1500px;
-  margin: 0;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  margin: 10px;
+}
+
+.bar {
+  height: 2px;
+  width: 27px;
+  background-color: #fff;
+  margin: 5px;
+  transition: all 400ms ease-in-out;
+}
+
+.hamburger {
+  margin: 20px auto;
+  display: none;
+  cursor: pointer;
+}
+
+.linksContainer.containerOpen {
+  transform: translate(0%);
+}
+
+.burgerOpen .bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.burgerOpen .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.burgerOpen .bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+@media screen and (max-width: 600px) {
+  .linksContainer {
+    width: 100%;
+    transform: translate(150%);
+  }
+  .container {
+    align-items: center;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+.dashboardCont {
+  display: flex;
+  margin: 20px;
 }
 
 .logo {
   width: 180px;
   height: 110px;
   transition-duration: 300ms;
-
-}
-
-@media screen and (max-width: 900px) {
-  .logo {
-    max-width: 120px;
-    max-height: 75px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .logo {
-    max-width: 80px;
-    max-height: 50px;
-  }
 }
 
 .logoContainer {
   max-width: 350px;
-  margin: 10px auto;
-  padding: 20px;
+  margin: 0px auto;
 }
 
 .home:hover {
   color: white;
   transition-duration: 200ms;
   transform: translateY(-5px);
-  font-weight: bold;
-}
-
-.container {
-  display: flex;
-  justify-content: space-between;
-  max-width: 1500px;
-  margin: 10px;
-  align-self: center;
 }
 
 .links {
@@ -56,35 +84,39 @@
   padding: 10px;
   transform: translateY(5px);
   transition-duration: 400ms;
-  margin: 0 50px 0px 50px;
+  margin: 0 50px;
 }
-
-.active{
-  color: rgba(36, 213, 98, 0.832);
-  transition-duration: 200ms;
-  font-weight: bold;
-}
-
 
 .links:hover {
   color: rgb(255, 255, 255);
   transform: translateY(-5px);
   transition-duration: 400ms;
-  font-weight: bold;
+}
+
+.active {
+  color: rgba(36, 213, 98, 0.832);
+  transition-duration: 200ms;
 }
 
 .linksContainer {
-  margin: 30px auto;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+  transition: all 400ms ease-in-out;
 }
 
-@media screen and (max-width: 800px) {
-  .linksContainer {
-    margin-top: 20px;
+@media screen and (max-width: 900px) {
+  .logo {
+    max-width: 120px;
+    max-height: 75px;
   }
-}
 
+  .home {
+    transform: translateY(-4px);
+    font-size: 20px;
+    padding: 0 10px 0 5px;
+  }
 
-@media screen and (max-width: 800px) {
   .links {
     font-size: 15px;
     padding: 5px;
@@ -93,27 +125,23 @@
   }
 }
 
-@media screen and (max-width: 800px) {
-  .home {
-    transform: translateY(-4px);
-    font-size: 20px;
-    padding:0 10px 0 5px
+@media screen and (max-width: 700px) {
+  .logo {
+    max-width: 100px;
+    max-height: 70px;
   }
-}
-@media screen and (max-width: 600px) {
+
   .links {
-    font-size: 9px;
-    padding: 5px;
-    margin: 10px 15px 0 15px;
+    font-size: 10px;
+    padding: 4px;
+    margin: 10px 12px 0 12px;
     transform: translateY(-5px);
   }
-}
 
-@media screen and (max-width: 600px) {
   .home {
     transform: translateY(-4px);
     font-size: 13px;
-    padding :0 10px 0 5px;
+    padding: 0 10px 0 5px;
     margin-top: 10px;
   }
 }

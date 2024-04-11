@@ -3,7 +3,7 @@
 import React from "react";
 import styles from "./page.module.css";
 import Card from "../components/Card/Card";
-import { gymData, sportsData, travelingData } from "../components/Presentation/data";
+import { gymData, sportsData, travelingData } from "../components/Card/data";
 
 const Hobbies = () => {
   return (
@@ -21,7 +21,7 @@ const Hobbies = () => {
         <Card data={travelingData} />
       </div>
       <div className={styles.textContainer}>
-        <Card data={gymData}/>
+        <Card data={gymData} />
       </div>
       <div className={styles.imageContainer}>
         <img className={styles.image} src="/gym.png" alt="gym" />
