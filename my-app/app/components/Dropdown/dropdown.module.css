@@ -1,0 +1,100 @@
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px auto;
+  min-height: 220px;
+}
+
+.topic {
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  color: inherit;
+  padding: 20px;
+  background-color: rgb(44, 44, 44);
+}
+
+.dropDowns {
+  color: white;
+  margin: 0 20px;
+  width: 500px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.topic:hover {
+  background-color: rgb(62, 62, 62);
+}
+
+.text {
+  border-radius: 10px;
+  background-color: rgba(91, 81, 81, 0.726);
+  transition: all 400ms;
+  margin: 0;
+  height: 0;
+  font-size: 0;
+}
+
+.text p {
+  margin: 0;
+}
+
+.textActive {
+  font-size: 14px;
+  height: fit-content;
+  padding: 15px;
+  opacity: 1;
+  padding: 15px;
+}
+
+.logo {
+  max-width: 25px;
+  border-radius: 100%;
+  padding: 7px;
+  transition: all 100ms ease-in-out;
+}
+
+.logoActive {
+  rotate: 180deg;
+}
+
+@media screen and (max-width: 900px) {
+  .dropDowns {
+    width: 300px;
+  }
+  .topic {
+    font-size: 17px;
+    padding: 17px;
+
+  }
+  .textActive {
+    font-size: 10px;
+    height: fit-content;
+  }
+  .logo {
+    max-width: 20px;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+    .dropDowns {
+      width: 270px;
+    }
+    .topic {
+      font-size: 13px;
+      padding: 13px;
+    }
+    .textActive {
+      font-size: 9px;
+      height: fit-content;
+    }
+    .logo {
+        max-width: 15px;
+        padding: 3px;
+    }
+  }
+  

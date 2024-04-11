@@ -8,6 +8,7 @@ import {
   simpleShellData,
 } from "../components/Card/data";
 import Card from "../components/Card/Card";
+import Dropdown from "../components/Dropdown/dropdown";
 
 const Portfolio = () => {
   return (
@@ -43,6 +44,7 @@ const Portfolio = () => {
       <div className={styles.imageContainer}>
         <img className={styles.image} src="/shell.png" alt="shell" />
       </div>
+      <Dropdown />
     </div>
   );
 };

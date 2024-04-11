@@ -67,13 +67,17 @@ const Navbar = () => {
             </Link>
           </div>
         </div>
-        <div onClick={() => toggleBurger()} className={`${styles.hamburger} ${burger === false && styles.burgerOpen}`}>
+        <div
+          onClick={() => toggleBurger()}
+          className={`${styles.hamburger} ${
+            burger === false && styles.burgerOpen
+          }`}
+        >
           <div className={styles.bar}></div>
           <div className={styles.bar}></div>
           <div className={styles.bar}></div>
         </div>
       </div>
-
     </header>
   );
 };

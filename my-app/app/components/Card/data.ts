@@ -56,3 +56,21 @@ export const simpleShellData = {
   subTitle: "Simple Shell",
   text: "Developed as a Simple Shell clone project, this minimalist command-line interface offers basic functionalities similar to traditional shells. Written in C, it provides users with essential commands for navigating directories, executing programs, and managing files efficiently.",
 };
+
+export const accordings1 = {
+  id: 11,
+  subTitle: "What i knew",
+  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+};
+
+export const accordings2 = {
+  id: 12,
+  subTitle: "What I just learned",
+  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+};
+
+export const accordings3 = {
+  id: 13,
+  subTitle: "What am I about to practice",
+  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+};
