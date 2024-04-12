@@ -31,7 +31,7 @@ const Portfolio = () => {
         <a className={styles.anchor} href="https://github.com/Ergi004/Bank">
           <Card data={bankSysData} />
         </a>
-        .
+        
       </div>
       <div className={styles.textContainer}>
         <a
